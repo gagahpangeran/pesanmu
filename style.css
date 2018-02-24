@@ -1,0 +1,409 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial,Sans-Serif;
+	background-image: url('head.jpg'), url('foot.jpg');
+	background-position: top center, bottom center;
+	background-size: 100% auto, 100% auto;
+	background-repeat: no-repeat, no-repeat;
+	background-color: #4c507c;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#main {
+	max-width: 85%;
+	margin: 250px auto 350px;
+}
+
+.judul {
+	text-align: center;
+	font-size: 70px;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.judul a {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.judul a:hover {
+	text-shadow: 0 0 10px #fff;
+}
+
+.des {
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.tombol {
+	background: #fff;
+	max-width: 130px;
+	text-align: center;
+	margin: 0 auto 15px;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 15px;
+	border: 1px solid #fff;
+	transition: all 0.2s ease-in-out;
+}
+
+.tombol:hover {
+	cursor: pointer;
+	background: transparent;
+	color: #fff;
+	box-shadow: 0 0 15px #fff, inset 0 0 15px #fff;
+	text-shadow: 0 0 10px #fff;
+}
+
+.pesan {
+	background: #fff;
+	margin: 10px 0;
+	padding: 15px 20px;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+	font-size: 20px;
+}
+
+.pesan.active {
+	box-shadow: 0 0 15px #fff;
+}
+
+.pesan:hover {
+	cursor: pointer;
+	padding-left: 30px;
+	padding-right: 10px;
+	box-shadow: 0 0 30px #fff;
+}
+
+.pesan span {
+	display: block;
+}
+
+.komentar {
+	overflow: hidden;
+	max-height: 0;
+	max-width: 95%;
+	margin: 0 auto;
+	transition: max-height 0.2s ease-in-out;
+}
+
+.isikomen {
+	background: #fff;
+	padding: 15px 20px;
+	margin: 10px 0;
+	border-radius: 10px;
+}
+
+.komen {
+	background: #fff;
+	max-width: 40%;
+	padding: 15px 20px;
+	margin: 10px 0;
+	border-radius: 10px;
+}
+
+.komen input, .komen textarea {
+	display: block;
+}
+
+.komen textarea {
+	width: 95%;
+	height: 100px;
+	resize: none;
+	border-radius: 10px;
+	font-family: Arial,Sans-Serif;
+	padding: 5px;
+	outline: none;
+	border: 1px solid #ccc;
+	transition: all 0.2s ease-in-out;
+}
+
+.komen textarea:focus {
+	border: 1px solid #4c507c;
+}
+
+.komen input {
+	background: #4c507c;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	border: 1px solid #4c507c;
+	transition: all 0.2s ease-in-out;
+}
+
+.komen input:hover {
+	background: transparent;
+	cursor: pointer;
+	color: #4c507c;
+}
+
+#popup {
+    background: rgba(0,0,0,0.5);
+    display: table;
+    position: fixed;
+    top: -50%;
+    left: 0;
+    opacity: 0.8;
+    height: 110%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+#popup.hidden {
+	visibility: hidden;
+}
+
+#popup.active {
+	top: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.krmpesan input[type="text"] {
+	display: block;
+	height: 30px;
+	width: 95%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+	transition: all 0.2s ease-in-out;
+	padding: 0 5px;
+}
+
+.krmpesan textarea {
+	display: block;
+	height: 100px;
+	width: 95%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+	transition: all 0.2s ease-in-out;
+	padding: 0 5px;
+	resize: none;
+	font-family: Arial;
+}
+
+.krmpesan input[type="text"]:focus, .krmpesan textarea:focus {
+	outline: none;
+	border: 1px solid #4c507c;
+}
+
+.krmpesan input[type="submit"] {
+	height: 30px;
+	font-size: 15px;
+	padding: 0 5px;
+	background: #4c507c;
+	color: #fff;
+	border: 1px solid #4c507c;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+}
+
+.krmpesan input[type="submit"]:hover {
+	background: transparent;
+	color: #4c507c;
+	cursor: pointer;
+}
+
+#popup.hidden .inner {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#popup.active .inner {
+	visibility: visible;
+	opacity: 1;
+}
+
+.close {
+	width: 33px;
+	height: 33px;
+	padding: 4px;
+	color: #fff;
+	text-align: center;
+	background: #4c507c;
+	border-radius: 50%;
+	float: right;
+	margin: -35px -35px 0 0;
+	font-size: 30px;
+	border: 5px solid #fff;
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+#btp {
+	position: fixed;
+	bottom: 30px;
+	display: inline;
+	transition: all 0.2s ease-in-out;
+}
+
+#btp.hidden {
+	right: -150px;
+}
+
+#btp.active {
+	right: 30px;
+}
+
+#btp a {
+	display: block;
+	background: #4c507c;
+	max-width: 200px;
+	text-align: center;
+	padding: 20px 10px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	font-size: 17px;
+	transition: all 0.2s ease-in-out;
+}
+
+#btp a:hover {
+	box-shadow: 0 0 20px #fff;
+}
+
+@media (max-width: 1200px) {
+
+#main {
+	margin: 200px auto 250px;
+}
+
+}
+
+@media (max-width: 1000px) {
+
+#main {
+	margin: 150px auto 200px;
+}
+
+}
+
+@media (max-width: 800px) {
+
+#main {
+	margin: 100px auto 170px;
+}
+
+.judul {
+	font-size: 55px;
+}
+
+.des {
+	font-size: 20px;
+}
+
+.tombol {
+	font-size: 15px;
+	max-width: 100px;
+}
+
+.pesan {
+	font-size: 15px;
+}
+
+.komen {
+	max-width: 60%;
+}
+
+}
+
+@media (max-width: 600px) {
+
+#main {
+	margin: 70px auto 120px;
+}
+
+#btp {
+	bottom: 20px;
+}
+
+#btp.active {
+	right: 20px;
+}
+
+#btp a {
+	font-size: 15px;
+	padding: 15px 10px;
+}
+
+.komen textarea {
+	height: 50px;
+}
+
+}
+
+@media (max-width: 400px) {
+
+#main {
+	margin: 20px auto 90px;
+}
+
+#btp {
+	bottom: 10px;
+}
+
+#btp.active {
+	right: 10px;
+}
+
+#btp a {
+	font-size: 12px;
+	padding: 10px 5px;
+}
+
+.komen textarea {
+	height: 50px;
+}
+
+.komen {
+	max-width: 100%;
+}
+
+.judul {
+	font-size: 40px;
+}
+
+.des {
+	font-size: 15px;
+}
+
+.inner {
+	max-width: 150px;
+}
+
+}
