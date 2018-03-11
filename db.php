@@ -11,7 +11,7 @@
 	$password = "";
 
 	// Masukkan nama database di sini
-	$name = "kimi";
+	$name = "pesanmu";
 
 	$conn = mysqli_connect($host,$username,$password);
 	mysqli_select_db($conn,$name);
