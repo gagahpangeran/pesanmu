@@ -1,9 +1,9 @@
 Sebelum menginstall....
-Jadi website ini temanya terinspirasi dari cerita antara Taki dan Mitsuha di film Kimi no Na wa.
+Jadi website ini temanya terinspirasi dari cerita antara Taki dan Mitsuha di film Kimi no Na wa (君の名は）.
 Taki dan Mitsuha saling mencoba berkirim pesan agar tau nama mereka masing-masing, tapi sayang, endingnya mereka berdua... (Nonton aja sendiri, nanti spoiler)
 Karena melihat website dududu yang bisa berkirim pesan secara anonim dan juga cerita Taki & Mitsuha,
 maka website ini bisa juga sebagai penghubung antara mereka yg ingin berkirim pesan secara anonim ke doi nya (Kalo punya :v )
-Nama website nya Pesanmu (En : Your Massage, Jp: Kimi no Messeeji) biar mirip kayak terjemahan literal kimi no na wa (Id: Namamu, En: Your Name)
+Nama website nya Pesanmu (En : Your Massage, Jp: Kimi no Messeeji　（君のメッセージ）) biar mirip kayak terjemahan literal kimi no na wa (Id: Namamu, En: Your Name)
 
 Cara install Pesanmu
 1. Masukkan satu folder file ke tempat yang ingin dipakai untuk membuat web
